@@ -34,8 +34,8 @@ function isSSR() {
 }
 
 if (!isSSR()) {
-  PDFJS = require('pdfjs-dist/build/pdf');
-  PDFJSViewer = require('pdfjs-dist/web/pdf_viewer');
+  PDFJS = require('pdfjs-dist/es5/build/pdf');
+  PDFJSViewer = require('pdfjs-dist/es5/web/pdf_viewer');
 
   PDFJS.verbosity = PDFJS.VerbosityLevel.ERRORS;
 }
